@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VanBlaise — Portfolio (v2)</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="VanBlaise — Frontend Developer & Data Science Enthusiast. Projects, skills, and contact." />
+  <meta property="og:title" content="VanBlaise — Portfolio" />
+  <meta property="og:description" content="Frontend Developer & Data Science Enthusiast. Explore my work and skills." />
+  <meta property="og:image" content="../preview.png" />
+  <meta property="og:url" content="https://vanblaise.github.io/v2-portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar glass">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="logo-gem"></span>
+        <span class="logo-text">VanBlaise</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle color theme">🌙</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <div class="avatar-ring">
+          <!-- Use your own avatar at: /v2-portfolio/assets/avatar.svg -->
+          <img src="assets/avatar.svg" alt="Blaise avatar" onerror="this.style.display='none'">
+          <div class="avatar-fallback" aria-hidden="true">VB</div>
+        </div>
+
+        <h1 class="title">
+          Hi, I'm <span class="gradient-text">Blaise</span>
+        </h1>
+
+        <h2 class="subtitle">
+          <span id="typewriter"></span><span class="cursor">|</span>
+        </h2>
+
+        <p class="lead">
+          I build clean, interactive web experiences and explore data science for insights.
+        </p>
+
+        <div class="cta-row">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <!-- 🔗 Replace this Google Drive link with your actual CV link -->
+          <a href="https://drive.google.com/your-cv-link" target="_blank" rel="noopener" class="btn glass">📄 Download CV</a>
+        </div>
+      </div>
+
+      <div class="hero-right orb-wrap">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS (Carousel) ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title gradient-text">Skills</h2>
+
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+
+        <div class="carousel-track">
+          <!-- Slide 1: Frontend -->
+          <article class="slide">
+            <h3 class="slide-title">Frontend</h3>
+            <div class="badge-row">
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">JavaScript (ES6+)</span>
+              <span class="badge">Responsive UI</span>
+              <span class="badge">Accessibility</span>
+              <span class="badge">Git & GitHub</span>
+            </div>
+            <p class="slide-note">Layouts, animations, interaction design, performance basics.</p>
+          </article>
+
+          <!-- Slide 2: Data Science -->
+          <article class="slide">
+            <h3 class="slide-title">Data Science (Foundations)</h3>
+            <div class="badge-row">
+              <span class="badge">Python</span>
+              <span class="badge">Pandas</span>
+              <span class="badge">NumPy</span>
+              <span class="badge">Data Cleaning</span>
+              <span class="badge">Data Processing</span>
+              <span class="badge">Jupyter</span>
+            </div>
+            <p class="slide-note">Cleaning, reshaping, exploring datasets for insights.</p>
+          </article>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Next slide">›</button>
+      </div>
+
+      <div class="dots" aria-label="Slide navigation"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title gradient-text">Projects</h2>
+
+      <div class="project-grid">
+        <!-- Project Card -->
+        <article class="card tilt">
+          <div class="card-media">
+            <img src="assets/project1.jpg" alt="Responsive Landing Page" onerror="this.style.display='none'">
+            <div class="card-glare"></div>
+          </div>
+          <div class="card-body">
+            <h3>Responsive Landing Page</h3>
+            <p>A sleek, mobile-friendly landing page built with semantic HTML, modern CSS, and a touch of JS.</p>
+            <div class="chip-row">
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="link">Live Demo</a>
+              <a href="#" class="link">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card tilt">
+          <div class="card-media">
+            <img src="assets/project2.jpg" alt="Data Cleaning Script" onerror="this.style.display='none'">
+            <div class="card-glare"></div>
+          </div>
+          <div class="card-body">
+            <h3>Data Cleaning Script</h3>
+            <p>Python utilities to clean messy CSVs: handle duplicates, missing values, and column normalization.</p>
+            <div class="chip-row">
+              <span class="chip">Python</span><span class="chip">Pandas</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="link">Docs</a>
+              <a href="#" class="link">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card tilt">
+          <div class="card-media">
+            <img src="assets/project3.jpg" alt="UI Dashboard Concept" onerror="this.style.display='none'">
+            <div class="card-glare"></div>
+          </div>
+          <div class="card-body">
+            <h3>UI Dashboard Concept</h3>
+            <p>Modern dashboard prototype focusing on clarity, hierarchy, and delightful micro-interactions.</p>
+            <div class="chip-row">
+              <span class="chip">UI</span><span class="chip">UX</span><span class="chip">Prototyping</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="link">Preview</a>
+              <a href="#" class="link">Figma</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title gradient-text">About Me</h2>
+      <p class="about-text">
+        I’m a Frontend Developer with a love for clean interfaces and thoughtful interactions. 
+        Lately, I’ve been expanding into data science fundamentals — using Python to clean, reshape, 
+        and explore datasets. When I’m not coding, you’ll probably find me reading, trading, or tinkering.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title gradient-text">Contact</h2>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+
+      <div class="contact-links">
+        <a href="mailto:vandu.emmanuel@gmail.com">Email</a>
+        <a href="https://github.com/VanBlaise" target="_blank" rel="noopener">GitHub</a>
+        <!-- 🔗 CV link again in footer area -->
+        <a href="https://drive.google.com/your-cv-link" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer glass">
+    <div class="container footer-inner">
+      <span>© 2025 Blaise — Built with HTML, CSS & JS</span>
+      <span class="dot">•</span>
+      <span>Fun fact: I trade markets when I’m not trading pixels.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
